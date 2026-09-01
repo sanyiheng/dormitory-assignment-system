@@ -61,7 +61,135 @@
 
 ## 项目结构
 
-
+dormitory/
+│
+├── dormitory-backend/                          # 后端项目
+│   ├── pom.xml
+│   └── src/
+│       └── main/
+│           ├── java/
+│           │   └── com/dormitory/management/
+│           │       ├── DormitoryManagementApplication.java
+│           │       ├── controller/
+│           │       │   ├── AuthController.java
+│           │       │   ├── StudentController.java
+│           │       │   ├── DormitoryController.java
+│           │       │   ├── QuestionnaireController.java
+│           │       │   ├── AssignmentController.java
+│           │       │   ├── SystemConfigController.java
+│           │       │   ├── NoticeController.java
+│           │       │   └── DashboardController.java
+│           │       ├── service/
+│           │       │   ├── AuthService.java
+│           │       │   ├── StudentService.java
+│           │       │   ├── DormitoryService.java
+│           │       │   ├── QuestionnaireService.java
+│           │       │   ├── AssignmentService.java
+│           │       │   ├── NoticeService.java
+│           │       │   ├── DashboardService.java
+│           │       │   └── impl/
+│           │       │       ├── AuthServiceImpl.java
+│           │       │       ├── StudentServiceImpl.java
+│           │       │       ├── DormitoryServiceImpl.java
+│           │       │       ├── QuestionnaireServiceImpl.java
+│           │       │       ├── AssignmentServiceImpl.java
+│           │       │       ├── NoticeServiceImpl.java
+│           │       │       └── DashboardServiceImpl.java
+│           │       ├── mapper/
+│           │       │   ├── AdminUserMapper.java
+│           │       │   ├── StudentMapper.java
+│           │       │   ├── BuildingMapper.java
+│           │       │   ├── DormitoryMapper.java
+│           │       │   ├── DormAssignMapper.java
+│           │       │   ├── QuestionnaireMapper.java
+│           │       │   ├── QuestionnaireOptionMapper.java
+│           │       │   ├── StudentQuestionnaireMapper.java
+│           │       │   ├── SystemConfigMapper.java
+│           │       │   └── NoticeMapper.java
+│           │       ├── entity/
+│           │       │   ├── AdminUser.java
+│           │       │   ├── Student.java
+│           │       │   ├── Building.java
+│           │       │   ├── Dormitory.java
+│           │       │   ├── DormAssign.java
+│           │       │   ├── Questionnaire.java
+│           │       │   ├── QuestionnaireOption.java
+│           │       │   ├── StudentQuestionnaire.java
+│           │       │   ├── SystemConfig.java
+│           │       │   └── Notice.java
+│           │       ├── dto/
+│           │       │   ├── LoginDTO.java
+│           │       │   ├── StudentDTO.java
+│           │       │   ├── DormitoryDTO.java
+│           │       │   ├── SubmitQuestionnaireDTO.java
+│           │       │   ├── SystemConfigDTO.java
+│           │       │   └── NoticeDTO.java
+│           │       ├── vo/
+│           │       │   ├── LoginVO.java
+│           │       │   ├── StudentVO.java
+│           │       │   ├── DormitoryVO.java
+│           │       │   ├── QuestionnaireVO.java
+│           │       │   ├── AssignmentResultVO.java
+│           │       │   └── DashboardVO.java
+│           │       ├── config/
+│           │       │   ├── MyBatisFlexConfiguration.java
+│           │       │   ├── WebMvcConfig.java
+│           │       │   └── Knife4jConfig.java
+│           │       ├── common/
+│           │       │   ├── Result.java
+│           │       │   ├── ResultCode.java
+│           │       │   └── Constants.java
+│           │       └── exception/
+│           │           ├── BusinessException.java
+│           │           └── GlobalExceptionHandler.java
+│           └── resources/
+│               ├── application.yml
+│               └── sql/
+│                   └── schema.sql
+│
+└── dormitory-frontend/                        # 前端项目
+    ├── index.html
+    ├── package.json
+    ├── package-lock.json
+    ├── vite.config.js
+    ├── postcss.config.js
+    ├── tailwind.config.js
+    └── src/
+        ├── main.js
+        ├── App.vue
+        ├── api/
+        │   ├── auth.js
+        │   ├── student.js
+        │   ├── dormitory.js
+        │   ├── questionnaire.js
+        │   ├── assignment.js
+        │   ├── notice.js
+        │   └── dashboard.js
+        ├── assets/
+        │   └── style.css
+        ├── router/
+        │   └── index.js
+        ├── stores/
+        │   └── user.js
+        ├── utils/
+        │   └── request.js
+        └── views/
+            ├── admin/
+            │   ├── Layout.vue
+            │   ├── Dashboard.vue
+            │   ├── StudentManage.vue
+            │   ├── DormitoryManage.vue
+            │   ├── AssignmentManage.vue
+            │   └── NoticeManage.vue
+            ├── student/
+            │   ├── Layout.vue
+            │   ├── Home.vue
+            │   ├── Dormitory.vue
+            │   ├── Questionnaire.vue
+            │   ├── Assignment.vue
+            │   └── Profile.vue
+            └── common/
+                └── Login.vue
 
 ## 数据库设计
 
