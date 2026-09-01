@@ -63,13 +63,14 @@
 
 dormitory/
 │
-├── dormitory-backend/                          # 后端项目
+├── dormitory-backend/
 │   ├── pom.xml
 │   └── src/
 │       └── main/
 │           ├── java/
 │           │   └── com/dormitory/management/
 │           │       ├── DormitoryManagementApplication.java
+│           │       │
 │           │       ├── controller/
 │           │       │   ├── AuthController.java
 │           │       │   ├── StudentController.java
@@ -79,6 +80,7 @@ dormitory/
 │           │       │   ├── SystemConfigController.java
 │           │       │   ├── NoticeController.java
 │           │       │   └── DashboardController.java
+│           │       │
 │           │       ├── service/
 │           │       │   ├── AuthService.java
 │           │       │   ├── StudentService.java
@@ -95,6 +97,7 @@ dormitory/
 │           │       │       ├── AssignmentServiceImpl.java
 │           │       │       ├── NoticeServiceImpl.java
 │           │       │       └── DashboardServiceImpl.java
+│           │       │
 │           │       ├── mapper/
 │           │       │   ├── AdminUserMapper.java
 │           │       │   ├── StudentMapper.java
@@ -106,6 +109,7 @@ dormitory/
 │           │       │   ├── StudentQuestionnaireMapper.java
 │           │       │   ├── SystemConfigMapper.java
 │           │       │   └── NoticeMapper.java
+│           │       │
 │           │       ├── entity/
 │           │       │   ├── AdminUser.java
 │           │       │   ├── Student.java
@@ -117,6 +121,7 @@ dormitory/
 │           │       │   ├── StudentQuestionnaire.java
 │           │       │   ├── SystemConfig.java
 │           │       │   └── Notice.java
+│           │       │
 │           │       ├── dto/
 │           │       │   ├── LoginDTO.java
 │           │       │   ├── StudentDTO.java
@@ -124,6 +129,7 @@ dormitory/
 │           │       │   ├── SubmitQuestionnaireDTO.java
 │           │       │   ├── SystemConfigDTO.java
 │           │       │   └── NoticeDTO.java
+│           │       │
 │           │       ├── vo/
 │           │       │   ├── LoginVO.java
 │           │       │   ├── StudentVO.java
@@ -131,23 +137,27 @@ dormitory/
 │           │       │   ├── QuestionnaireVO.java
 │           │       │   ├── AssignmentResultVO.java
 │           │       │   └── DashboardVO.java
+│           │       │
 │           │       ├── config/
 │           │       │   ├── MyBatisFlexConfiguration.java
 │           │       │   ├── WebMvcConfig.java
 │           │       │   └── Knife4jConfig.java
+│           │       │
 │           │       ├── common/
 │           │       │   ├── Result.java
 │           │       │   ├── ResultCode.java
 │           │       │   └── Constants.java
+│           │       │
 │           │       └── exception/
 │           │           ├── BusinessException.java
 │           │           └── GlobalExceptionHandler.java
+│           │
 │           └── resources/
 │               ├── application.yml
 │               └── sql/
 │                   └── schema.sql
 │
-└── dormitory-frontend/                        # 前端项目
+└── dormitory-frontend/
     ├── index.html
     ├── package.json
     ├── package-lock.json
@@ -157,6 +167,7 @@ dormitory/
     └── src/
         ├── main.js
         ├── App.vue
+        │
         ├── api/
         │   ├── auth.js
         │   ├── student.js
@@ -165,14 +176,19 @@ dormitory/
         │   ├── assignment.js
         │   ├── notice.js
         │   └── dashboard.js
+        │
         ├── assets/
         │   └── style.css
+        │
         ├── router/
         │   └── index.js
+        │
         ├── stores/
         │   └── user.js
+        │
         ├── utils/
         │   └── request.js
+        │
         └── views/
             ├── admin/
             │   ├── Layout.vue
@@ -181,6 +197,7 @@ dormitory/
             │   ├── DormitoryManage.vue
             │   ├── AssignmentManage.vue
             │   └── NoticeManage.vue
+            │
             ├── student/
             │   ├── Layout.vue
             │   ├── Home.vue
@@ -188,6 +205,7 @@ dormitory/
             │   ├── Questionnaire.vue
             │   ├── Assignment.vue
             │   └── Profile.vue
+            │
             └── common/
                 └── Login.vue
 
